@@ -1,0 +1,18 @@
+<template>
+    <div><strong>Senior Manager-Support</strong>
+        <div><slot name="supportMn"></slot></div>
+    </div>
+    <div><strong>Junior Manager-Support</strong>
+        <div><slot name="supportJMn"></slot></div>
+    </div>
+    
+    <div><strong>Senior Manager-Service</strong>
+        <div><slot name="serviceMn"></slot></div>
+    </div>
+    <div><strong>Junior Manager-Service</strong>
+        <div><slot name="serviceJMn"></slot></div>
+    </div>
+    <footer class="slds-card__footer slds-hide">
+        <slot name="footer" onslotchange={handleSlotChange}></slot>
+    </footer>
+</template>
