@@ -1,0 +1,10 @@
+<template>
+    <lightining-card title="Search Contact">
+        <div class="slds-var-m-around_medium">
+            <lightning-input label="Search Contact" type="search" onchange={handleKeyChange} class="slds-var-m-bottom_small"></lightning-input>
+            <template for:each={contactList} for:item="contactObj">
+                <option key={contactObj.Id}>{contactObj.LastName}</option>
+            </template>
+        </div>
+    </lightining-card>
+</template>
